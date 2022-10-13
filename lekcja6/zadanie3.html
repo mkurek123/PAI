@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+        <title>PAI</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var znak = prompt("Jaki znak chcesz wyświetlić", "");
+            var coile = parseInt(prompt("Co ile chcesz wyświetlić ten znak", ""));    
+            var wiersze = parseInt(prompt("Ile wierszy", ""));
+            var kolumny = parseInt(prompt("Ile kolumn", ""));
+                document.write("szerokosc:"+ wiersze+"<br>");
+                document.write("wysokosc:"+ kolumny+"<br>");
+                document.write("znak:"+ znak+"<br>");
+                document.write("co ile ma sie wyswietlac znak:"+ coile+"<br>");
+
+        document.write("<br>")
+    for(a = 1; a <=kolumny; ++a)
+    {
+            for (count = 1; count <=wiersze; ++count) {
+            if (count % coile == 0)
+            document.write("-")
+            else
+            document.write(znak)
+        }
+        document.write("<br>")
+    }
+        </script>
+    </body>
+</html>
