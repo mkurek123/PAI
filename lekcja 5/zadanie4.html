@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <title>PAI</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+                if (confirm("Jeżeli chcesz wyświetlić prostokąt z gwiazdek, kliknij OK, jeżeli wciśniesz Anuluj dostaniesz linię poziomą z gwiazdek")){ 
+                    var szerokosc = parseInt(prompt("Podaj szerokosc prostokąta", ""));
+                    var wysokosc = parseInt(prompt("Podaj wysokość prostokąta", ""));
+                        document.write("szerokosc:"+ szerokosc+"<br>");
+                        document.write("wysokosc:"+ wysokosc);
+                document.write("<br>")
+            for(a = 1; a <=wysokosc; ++a)
+            {
+                    for (count = 1; count <=szerokosc; ++count) {
+                    document.write("*")
+
+                }
+                document.write("<br>")
+            }
+            }
+                else{
+                    var dlugosc = parseInt(prompt("Podaj dlugosc lini", ""));
+                for(a = 1; a <=dlugosc; ++a){
+                        document.write("*")
+                    }
+                }
+        </script>
+    </body>
+</html>
