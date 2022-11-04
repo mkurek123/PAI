@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	if (confirm("Czy grasz w gry?")) {
+   		var gra = prompt("Jaka jest twoja ulubiona gra?")
+   		document.write("Ulubiona gra: " +gra)
+ 		var godziny = prompt("Ile spędziłeś w niej godzin?");
+ 		document.write("<br>")
+ 		document.write("Przegrane godziny: " +godziny)
+ 		document.write("<br>")
+ 		if (godziny<=100) {
+ 			document.write("Jesteś w tym początkujący")
+ 		}
+ 		
+ 		else if (godziny>100 && godziny<300){
+            document.write("Poznałeś już tę grę")
+        }
+ 		
+ 		else 
+ 			document.write("Jesteś w tym mistrzem")
+	} 
+   		else {
+   		document.write("Bardzo dobrze, tak trzymaj");
+} 
+</script>
+
+</body>
+</html>
