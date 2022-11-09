@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pai</title>
+</head>
+
+<body>
+
+    <p> Kwota pożyczki: </p>
+	<input type="number" id="kwota">
+	<p> Na ile miesięcy: </p>
+	<input type="number" id="ilosc_miesiecy">
+	<p> Oprocentowanie: </p>
+	<input type="number" id="oprocentowanie">
+        <button onclick="display()">Wyślij</button>
+        <p id="pole1"> ... </p>
+	 	<p id="pole2"> ... </p>
+ 		<p id="pole3"> ... </p>
+
+
+<script type="text/javascript">
+    function display() {
+
+        var kwota = parseInt(document.getElementById("kwota").value);  
+        var czas = parseInt(document.getElementById("ilosc_miesiecy").value);
+        var oprocentowanie = parseInt(document.getElementById("oprocentowanie").value);             
+        document.getElementById("pole1").textContent = kwota;
+        document.getElementById("pole2").textContent = czas;
+        document.getElementById("pole3").textContent = oprocentowanie;
+        var a = (kwota/100);
+        var b = (a*oprocentowanie);
+        var splata = (kwota+b)
+        var raty = (splata/czas)
+        document.getElementById("pole4").textContent = raty
+
+    }
+</script>
+
+<br> Miesięczna Rata <p id="pole4"> ... </p>
+</body>
+</html>
