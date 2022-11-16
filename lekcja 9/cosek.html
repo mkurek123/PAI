@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>pai</title>
+</head>
+<body>
+
+	<p> ilość gwiazdek: </p>
+	<input type="number" id="ilosc">
+    <button onclick="display()">Wyślij</button>
+    <p id="pole1"> ... </p>
+
+	<script type="text/javascript">
+    	function display() {
+    		var gwiazdka = parseInt(document.getElementById("ilosc").value);
+    		document.getElementById("pole1").textContent = gwiazdka;
+    		for(a = 1; a <=gwiazdka; ++a){
+                 document.write("*")
+            }
+            }
+    </script>
+
+</body>
+</html>
