@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>zadanie2</title>
+</head>
+<body>
+
+<div>Posiadasz serwerów: </div>
+<div id="liczba">0</div>
+	<button onclick="kup()">Kup</button>
+	<button onclick="sprzedaj()">Sprzedaj</button>
+
+<script type="text/javascript">
+	function kup() {
+		var napis = parseInt(document.getElementById("liczba").innerHTML);
+		napis++;
+		document.getElementById("liczba").innerHTML = napis;
+	
+
+		
+}
+	function sprzedaj() {
+		var napis = parseInt(document.getElementById("liczba").innerHTML);
+		napis--;
+		document.getElementById("liczba").innerHTML = napis;
+}
+	</script>
+
+
+</body>
+</html>

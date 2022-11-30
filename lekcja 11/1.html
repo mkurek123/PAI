@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>zadanie1</title>
+</head>
+<body>
+
+<p id="przycisk1">Tekst 1</p>
+	<button onclick="kolor()">Zmień Kolor</button>
+	<button onclick="pog()">Pogrub tekst</button>
+	<button onclick="format()">Usuń formatowanie</button>
+<p id="przycisk2">Tekst 2</p>
+	<button onclick="kolor2()">Zmień Kolor</button>
+	<button onclick="pog2()">Pogrub tekst</button>
+	<button onclick="format2()">Usuń formatowanie</button>
+
+<script type="text/javascript">
+	function kolor() {
+	document.getElementById("przycisk1").style.color = "green";
+}
+	function kolor2() {
+	document.getElementById("przycisk2").style.color = "red";
+}
+	function pog() {
+	document.getElementById("przycisk1").style.fontWeight = "900";
+}
+	function pog2() {
+	document.getElementById("przycisk2").style.fontWeight = "900";
+}
+	function format() {
+	document.getElementById("przycisk1").style.color = "black";
+	document.getElementById("przycisk1").style.fontWeight = "normal";
+}
+	function format2() {
+	document.getElementById("przycisk2").style.color = "black";
+	document.getElementById("przycisk2").style.fontWeight = "normal";
+}
+</script>
+</body>
+</html>
